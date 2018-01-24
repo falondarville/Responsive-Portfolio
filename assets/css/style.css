@@ -74,12 +74,12 @@ h3 {
 }
 
 .bodyContent {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
 .mainContent {
-	width: 650px;
+	max-width: 650px;
 	background-color: #ffffff;
 	padding: 30px;
 	margin-left: -40px;
@@ -97,7 +97,7 @@ h3 {
 }
 
 .portfolioContainer {
-	width: 650px;
+	max-width: 650px;
 	padding: 30px;
 	background-color: #ffffff;
 	margin-top: 40px;
@@ -109,7 +109,7 @@ h3 {
 }
 
 .portfolioItems img {
-	width: 275px;
+	max-width: 275px;
 	height: 200px;
 }
 
@@ -136,7 +136,7 @@ a {
 .icons {
 	padding: 3px;
 	height: 60px;
-	width: 60px;
+	max-width: 60px;
 }
 
 .banner {
@@ -151,7 +151,7 @@ a {
 	bottom: 15px;
 	left: 0;
 	right: 0;
-	width: 235px;
+	max-width: 235px;
 }
 
 .contactContainer {
@@ -212,7 +212,7 @@ footer {
 	display: inline-block;
 	background-color: #ffffff;
 	margin-top: 40px;
-	width: 270px;
+	max-width: 270px;
 	height: 200px;
 	padding: 20px;
 	margin-right: 40px;
@@ -236,7 +236,7 @@ footer {
 	background-color: #dddddd;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 200px;
+	max-width: 200px;
 }
 
 .menuLine {
@@ -246,7 +246,21 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
+	.mainContent {
+		margin-left: 110px;
+		max-width: 450px;
+	}
+	#photo {
+		margin-bottom: 15px;
+		max-width: 390px;
+	}
+	.menuPadding a {
+		padding-left: 200px;
+	}
+	.sidebar {
+		margin-right: 100px;
 
+	}
 }
 
 @media screen and (max-width: 768px) {
