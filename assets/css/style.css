@@ -151,7 +151,7 @@ a {
 	bottom: 15px;
 	left: 0;
 	right: 0;
-	max-width: 235px;
+	width: 235px;
 }
 
 .contactContainer {
@@ -245,6 +245,12 @@ footer {
 	display: inline;
 }
 
+@media screen and (max-width: 1110px) {
+	.menuPadding a {
+		padding-left: 250px;
+	}
+}
+
 @media screen and (max-width: 980px) {
 	.mainContent, .portfolioContainer, .contactContainer {
 		margin-left: 110px;
@@ -266,7 +272,7 @@ footer {
 		left: 0;
 	}
 	.banner {
-		max-width: 400px;
+		width: 350px;
 	}
 	#photo {
 		margin-bottom: 15px;
@@ -285,10 +291,88 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
+	.menuPadding a {
+		padding-left: 180px;
+	}
+	.mainMenu {
+		padding-left: 20px;
+	}
+	.mainContent, .portfolioContainer, .contactContainer {
+		margin-left: 20px;
+		max-width: 750px;
+		width: 720px;
+	}
+	.sidebar {
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		max-width: 750px;
+		width: 720px;
+		float: none;
+		text-align: left;
+		padding: 30px;
+	}
+	.secondaryLine {
+		max-width: 680px;
+	}
+	.portfolioItems img {
+		width: 300px;
+		height: 200px;
+	}
+	.portfolioItems:nth-child(2n){
+		text-align: right;
+	}
+	.portfolioItems:nth-child(2n) .banner{
+		right: 0;
+		left: initial;
+	}
+	.portfolioItems {
+		float: left; 
+		position: relative;
+		margin-bottom: 40px;
+		width: 50%;
+	}
+	.banner {
+		width: 260px;
+	}
 }
 
 @media screen and (max-width: 640px) {
-
+	.mainMenu {
+		display: block;
+		padding-left: 0;
+		max-height: 200px;
+		position: static;
+	}
+	.mainMenu li {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	.logo {
+		width: 640px;
+		text-align: center;
+	}
+	.mainContent, .portfolioContainer, .contactContainer, .sidebar{
+		margin-left: 10px;
+		max-width: 620px;
+		width: 620px;
+	}
+	.portfolioItems img {
+		width: 555px;
+		height: 350px;
+	}
+	.portfolioItems:nth-child(2n){
+		text-align: none;
+	}
+	.banner {
+		width: 515px;
+	}
+	.portfolioItems {
+		width: 100%;
+		float: none;
+	}
+	#photo {
+		max-width: 555px;
+	}
 }
 
